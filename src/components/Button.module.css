@@ -1,0 +1,26 @@
+.createButton {
+    width: 5.625rem;
+    height: 3.25rem;
+    color: var(--gray-100);
+    background: var(--blue-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.createButton:hover {
+    background-color: var(--blue);
+    transition: background-color 0.2s;
+}
+
+.plusIcon {
+    padding: 4px;
+    margin-left: 4px;
+    margin-top: 6px;
+}

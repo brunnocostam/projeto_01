@@ -1,0 +1,39 @@
+.form {
+    width: 100%;
+    height: 100%;
+    /* background: green; */
+    display: flex;
+    justify-content: stretch;
+    margin: 0;
+    border: 0;
+}
+
+.textArea {
+    width: 100%;
+    height: 100%;
+    background: var(--gray-500);
+    border-radius: 8px;
+    border: 0;
+    padding: 0 1rem;
+    resize: none;
+    color: var(--gray-100);
+    font-family: 'Inter', sans-serif;
+    line-height: 3.375rem;
+    text-align: left;
+}
+
+.textArea::placeholder {
+    color: var(--gray-300);
+    text-align: left;
+    line-height: 3.375;
+}
+
+.textArea:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--purple);
+    color: var(--gray-100)
+}
+
+p {
+    margin-left: 0.25rem;
+}
