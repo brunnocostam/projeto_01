@@ -6,6 +6,7 @@
     justify-content: stretch;
     margin: 0;
     border: 0;
+    gap: 12px;
 }
 
 .textArea {

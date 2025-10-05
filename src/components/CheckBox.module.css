@@ -1,0 +1,33 @@
+.checkButton {
+    background: transparent;
+    color: var(--purple-dark); /* Cor do círculo preenchido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    position: relative; /* Adicionar para posicionamento absoluto do check */
+}
+
+.checkIcon {
+    position: absolute; /* Posiciona o check sobre o círculo */
+    color: var(--white); /* Check branco */
+}
+
+.uncheckedButton {
+    background: transparent;
+    color: var(--blue); /* Cor do círculo vazio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.uncheckedButton:hover {
+    color: var(--blue-dark); /* Hover effect opcional */
+}
+
+.checkButton:hover{
+    color: var(--purple)
+}

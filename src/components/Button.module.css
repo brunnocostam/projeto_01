@@ -24,3 +24,25 @@
     margin-left: 4px;
     margin-top: 6px;
 }
+
+.trashButton {
+    width: 100%;
+    color: var(--gray-300);
+    background: var(--gray-600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.trashIcon {
+    padding: 4px;
+    margin-right: 4px;
+    margin-top: 6px;
+}
+
+.trashButton:hover {
+    color: var(--danger);
+    transition: color .5s;
+}

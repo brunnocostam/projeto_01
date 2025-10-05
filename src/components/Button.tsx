@@ -1,37 +1,27 @@
-import { PlusCircle, Trash, Check, Circle } from 'feather-icons-react'
 import styles from './Button.module.css'
+import { PlusCircle, Trash } from 'phosphor-react'
 
 interface ButtonType {
-    buttonType: 'create' | 'trash' | 'check' | 'unchecked'
+    buttonType: 'create' | 'trash' | 'check' | 'unchecked';
+    onClick?: () => void;
+    disabled?: boolean
 }
 
-export function Button({ buttonType }: ButtonType) {
+export function Button({ buttonType, onClick, disabled }: ButtonType) {
     if (buttonType === 'create') {
         return (
-            <button type='submit' className={styles.createButton}>
+            <button type='submit' className={styles.createButton} onClick={onClick} disabled={disabled}>
                 <p className={styles.createButtonText}> Criar </p>
                 <span className={styles.plusIcon}>
-                    <PlusCircle size={16} />
+                    <PlusCircle size={24} />
                 </span>
-            </button>
-        )
-    } else if (buttonType === 'check') {
-        return (
-            <button className={styles.checkButton}>
-                    <Check size={16} />
-            </button>
-        )
-    } else if (buttonType === 'unchecked') {
-        return (
-            <button className={styles.uncheckedButton}>
-                    <Circle size={16} />
             </button>
         )
     } else {
         return (
-            <button className={styles.trashButton}>
+            <button className={styles.trashButton} onClick={onClick}>
                 <span className={styles.trashIcon}>
-                    <Trash size={16} />
+                    <Trash size={24} />
                 </span>
             </button>
         )
